@@ -5,6 +5,7 @@ var oReq = new XMLHttpRequest();
 
 function pesquisaCep() {
     // console.log(cep.value);
+
     oReq.open("GET", `https://cep.awesomeapi.com.br/json/${cep.value}`, true);
     oReq.setRequestHeader("content-type", "application/json");
 
