@@ -28,7 +28,10 @@ function converter() {
 
             real.appendChild(resultElement);
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> bb5ee7b3abc05f0ba78657f3e849f6437519c1b8
     };
 
     oReq.send(JSON.stringify({
@@ -36,4 +39,8 @@ function converter() {
     }));
 
     event.preventDefault();
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> bb5ee7b3abc05f0ba78657f3e849f6437519c1b8
