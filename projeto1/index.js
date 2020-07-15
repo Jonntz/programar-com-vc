@@ -11,6 +11,7 @@ function converter() {
     oReq.open("GET", `https://economia.awesomeapi.com.br/all/${moedas.value}-BRL`, true);
     oReq.setRequestHeader("content-type", "application/json");
     oReq.onreadystatechange = function () {
+        real.textContent = "";
         if (oReq.readyState == 4 && oReq.status == 404) {
             alert("Falha ao conectar com a API. Endereço não encontrado!");
         } else if (oReq.readyState == 4 && oReq.status == 200) {
