@@ -9,6 +9,7 @@ function pesquisaCep() {
     oReq.setRequestHeader("content-type", "application/json");
 
     oReq.onreadystatechange = function () {
+        endereco.textContent = "";
         if (oReq.readyState == 4 && oReq.status == 404) {
             alert("Não foi possível fazer a conexão com o banco de dados.");
 
